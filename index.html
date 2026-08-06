@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Damas Internacional</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="painel">
+    <div class="status-box">
+      <h3>Vez</h3>
+      <div id="vez" class="vez-valor brancas">BRANCAS</div>
+    </div>
+
+    <div class="status-box">
+      <h3>Status</h3>
+      <div id="msg" class="msg">Selecione uma peça.</div>
+    </div>
+
+    <div class="status-box">
+      <h3>Capturadas — Brancas</h3>
+      <div id="capB" class="capturas"></div>
+    </div>
+
+    <div class="status-box">
+      <h3>Capturadas  Vermelhas</h3>
+      <div id="capP" class="capturas"></div>
+    </div>
+
+    <button id="btnNovo">NOVO JOGO</button>
+    <button id="btnDesfazer" disabled>DESFAZER</button>
+  </div>
+
+  <div id="tabuleiro"></div>
+
+</div>
+
+<script src="damas.js"></script>
+</body>
+</html>

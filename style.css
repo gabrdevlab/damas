@@ -1,0 +1,163 @@
+/* ── Reset & Base ─────────────────────────────── */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #1a1a2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Courier New', monospace;
+  color: #e0e0e0;
+}
+
+/* ── Layout ───────────────────────────────────── */
+.container {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+/* ── Painel lateral ───────────────────────────── */
+.painel {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.status-box {
+  background: #16213e;
+  border: 1px solid #0f3460;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.status-box h3 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #4a90a4;
+  margin-bottom: 8px;
+}
+
+.vez-valor {
+  font-size: 18px;
+  font-weight: bold;
+}
+.vez-valor.brancas { color: #f0e6d3; }
+.vez-valor.pretas  { color: #c0392b; }
+
+.msg {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
+.capturas {
+  font-size: 20px;
+  line-height: 1.6;
+  min-height: 28px;
+}
+
+/* ── Botões ───────────────────────────────────── */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 1px;
+  transition: opacity .2s;
+}
+button:hover:not(:disabled) { opacity: .8; }
+button:disabled { opacity: .35; cursor: default; }
+
+#btnNovo     { background: #0f3460; color: #e0e0e0; }
+#btnDesfazer { background: #1a1a2e; color: #4a90a4; border: 1px solid #0f3460; }
+
+/* ── Tabuleiro ────────────────────────────────── */
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(10, 56px);
+  grid-template-rows:    repeat(10, 56px);
+  border: 3px solid #0f3460;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* ── Casas ────────────────────────────────────── */
+.casa {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background .1s;
+}
+
+.casa.clara  { background: #d4c5a9; }
+.casa.escura { background: #5c4033; }
+
+.casa.destaque { background: #e74c3c !important; }
+
+.casa.ultimo { outline: 3px inset rgba(255, 220, 50, .4); }
+
+/* Indicador de movimento simples (ponto) */
+.casa.pode-mover::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .35);
+  position: absolute;
+}
+
+/* Indicador de captura (anel) */
+.casa.pode-capturar::after {
+  content: '';
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 80, 50, .7);
+  position: absolute;
+}
+
+/* ── Peças ────────────────────────────────────── */
+.peca {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .5);
+  position: relative;
+  z-index: 1;
+  user-select: none;
+}
+
+.peca.branca {
+  background: radial-gradient(circle at 35% 35%, #fff 0%, #ccc 100%);
+}
+
+.peca.preta {
+  background: radial-gradient(circle at 35% 35%, #c0392b 0%, #7b241c 100%);
+}
+
+/* Símbolo de dama sobreposto */
+.peca.dama::after {
+  content: '♛';
+  font-size: 22px;
+  position: absolute;
+  color: rgba(0, 0, 0, .45);
+}
