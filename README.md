@@ -1,65 +1,160 @@
-# 🏁 Jogo de Damas (Checkers)
+# ♟️ Jogo de Damas
 
-Um jogo de damas clássico desenvolvido para navegadores web utilizando tecnologias front-end padrão (HTML, CSS e JavaScript). O projeto foi estruturado para rodar de forma simples, leve e intuitiva diretamente no browser.
+<p align="center">
 
-## 🚀 Tecnologias Utilizadas
+**Um jogo de damas clássico desenvolvido com HTML5, CSS3 e JavaScript puro.**
 
-O projeto foi construído utilizando:
+Interface moderna, regras oficiais e execução direta no navegador, sem dependências externas.
 
-* **HTML5:** Estruturação das telas e do tabuleiro.
-* **CSS3:** Estilização visual, design responsivo e animações das peças.
-* **JavaScript (ES6):** Lógica do jogo, validação de movimentos e inteligência das regras.
+</p>
 
-## 📋 Funcionalidades Planejadas / Inclusas
+---
 
-* Tabuleiro padrão 8x8 intercalado.
-* Movimentação de peças comuns na diagonal (apenas para frente).
-* Sistema de captura de peças adversárias (pular peça).
-* Transformação de peça comum em "Dama" ao atingir a última fileira.
-* Movimentação especial da Dama (múltiplas casas).
-* Alternância automática de turnos entre os jogadores.
-* Contador de peças restantes ou placar de captura.
+## 📸 Demonstração
 
-## 🔧 Como Executar o Projeto
+> Adicione aqui uma captura de tela ou GIF do jogo.
 
-Para testar o jogo localmente na sua máquina, siga os passos abaixo:
-
-1. **Clone o repositório:**
-
-```bash
-git clone https://github.com
+```text
+assets/images/game-preview.png
 ```
 
-1. **Navegue até a pasta do projeto:**
+---
+
+## ✨ Funcionalidades
+
+* 🎲 Tabuleiro tradicional 8×8
+* ♟️ Posicionamento automático das peças
+* 🔄 Alternância automática de turnos
+* ↗️ Movimentação diagonal
+* ⚔️ Captura de peças adversárias
+* 👑 Promoção automática para Dama
+* 🚀 Movimentação especial da Dama
+* 📊 Contador de peças restantes
+* 🏆 Detecção automática do vencedor
+* 📱 Interface responsiva
+
+---
+
+## 🛠 Tecnologias
+
+| Tecnologia     | Utilização                              |
+| -------------- | --------------------------------------- |
+| HTML5          | Estrutura da aplicação                  |
+| CSS3           | Estilização, animações e responsividade |
+| JavaScript ES6 | Lógica do jogo e regras                 |
+
+---
+
+## 📂 Estrutura do Projeto
+
+```text
+damas/
+│
+├── index.html
+├── style.css
+├── damas.js
+├── README.md
+│
+├── assets/
+│   ├── images/
+│   └── sounds/
+│
+└── LICENSE
+```
+
+---
+
+## 🚀 Como Executar
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/gabrdevlab/damas.git
+```
+
+### Entre na pasta
 
 ```bash
 cd damas
 ```
 
-1. **Abra o jogo:**
+### Execute
 
-```bash
-npm start
-```
+Abra o arquivo **index.html** no navegador.
 
-Ou abra o jogo diretamente com o seu navegador:
-
-Basta dar um duplo clique no arquivo `index.html` ou abri-lo diretamente através do seu navegador de preferência.
-
-## 📁 Estrutura de Arquivos
-
-```text
-├── index.html   # Estrutura principal da página web
-├── style.css    # Estilização visual do tabuleiro e das peças
-├── damas.js     # Toda a lógica e regras do jogo de damas
-└── README.md    # Documentação do projeto
-```
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações (opcional).
+Ou utilize o **Live Server** do Visual Studio Code.
 
 ---
-Desenvolvido por [gabrdevlab](https://github.com)
-"# damas"  
-"# damas"  
+
+## 🎮 Regras
+
+### Peças comuns
+
+* Movem-se apenas na diagonal.
+* Avançam somente para frente.
+* Capturam pulando sobre a peça adversária.
+
+### Damas
+
+* São promovidas automaticamente ao alcançar a última fileira.
+* Movem-se nas quatro diagonais.
+* Possuem alcance ampliado conforme as regras implementadas.
+
+---
+
+## 📋 Roadmap
+
+* ✅ Tabuleiro
+* ✅ Movimentação
+* ✅ Captura
+* ✅ Promoção para Dama
+* ✅ Controle de turnos
+* ✅ Contador de peças
+
+### Próximas versões
+
+* ⏳ Captura múltipla
+* ⏳ Destacar movimentos possíveis
+* ⏳ IA contra computador
+* ⏳ Multiplayer online
+* ⏳ Sons
+* ⏳ Animações
+* ⏳ Histórico de jogadas
+* ⏳ Sistema de ranking
+* ⏳ Salvar partida
+* ⏳ Temas claro e escuro
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas.
+
+Caso encontre algum problema ou tenha sugestões de melhorias:
+
+1. Faça um Fork do projeto.
+2. Crie uma nova branch.
+3. Faça suas alterações.
+4. Envie um Pull Request.
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença **MIT**.
+
+Consulte o arquivo **LICENSE** para mais detalhes.
+
+---
+
+## 👨‍💻 Autor
+
+### gabrdevlab
+
+GitHub
+
+https://github.com/gabrdevlab
+
+---
+
+⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
