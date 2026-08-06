@@ -1,160 +1,108 @@
-# ♟️ Jogo de Damas
+# 🏁 Jogo de Damas (Checkers)
 
-<p align="center">
-
-**Um jogo de damas clássico desenvolvido com HTML5, CSS3 e JavaScript puro.**
-
-Interface moderna, regras oficiais e execução direta no navegador, sem dependências externas.
-
-</p>
+Um jogo de damas clássico desenvolvido para navegadores web utilizando **HTML5**, **CSS3** e **JavaScript (ES6)**. O objetivo do projeto é oferecer uma implementação simples, leve e intuitiva das regras tradicionais do jogo, executada diretamente no navegador, sem necessidade de instalação.
 
 ---
 
-## 📸 Demonstração
+## 🚀 Tecnologias Utilizadas
 
-> Adicione aqui uma captura de tela ou GIF do jogo.
-
-```text
-assets/images/game-preview.png
-```
+* **HTML5** — Estrutura da aplicação e do tabuleiro.
+* **CSS3** — Estilização, layout responsivo e animações.
+* **JavaScript (ES6)** — Lógica do jogo, validação de movimentos e regras.
 
 ---
 
 ## ✨ Funcionalidades
 
-* 🎲 Tabuleiro tradicional 8×8
-* ♟️ Posicionamento automático das peças
-* 🔄 Alternância automática de turnos
-* ↗️ Movimentação diagonal
-* ⚔️ Captura de peças adversárias
-* 👑 Promoção automática para Dama
-* 🚀 Movimentação especial da Dama
-* 📊 Contador de peças restantes
-* 🏆 Detecção automática do vencedor
-* 📱 Interface responsiva
+* ✅ Tabuleiro clássico 8×8.
+* ✅ Posicionamento inicial automático das peças.
+* ✅ Alternância automática entre os jogadores.
+* ✅ Movimentação diagonal das peças comuns.
+* ✅ Captura de peças adversárias.
+* ✅ Promoção automática para Dama ao alcançar a última fileira.
+* ✅ Movimentação especial da Dama.
+* ✅ Contador de peças restantes.
+* 🚧 Possibilidade de adicionar novas funcionalidades, como:
+
+  * Destaque de movimentos possíveis.
+  * Captura múltipla.
+  * Histórico de jogadas.
+  * Modo jogador vs. computador.
+  * Sons e animações.
 
 ---
 
-## 🛠 Tecnologias
+## 📦 Como Executar
 
-| Tecnologia     | Utilização                              |
-| -------------- | --------------------------------------- |
-| HTML5          | Estrutura da aplicação                  |
-| CSS3           | Estilização, animações e responsividade |
-| JavaScript ES6 | Lógica do jogo e regras                 |
-
----
-
-## 📂 Estrutura do Projeto
-
-```text
-damas/
-│
-├── index.html
-├── style.css
-├── damas.js
-├── README.md
-│
-├── assets/
-│   ├── images/
-│   └── sounds/
-│
-└── LICENSE
-```
-
----
-
-## 🚀 Como Executar
-
-### Clone o repositório
+### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/gabrdevlab/damas.git
+git clone https://github.com/SEU-USUARIO/damas.git
 ```
 
-### Entre na pasta
+### 2. Entre na pasta do projeto
 
 ```bash
 cd damas
 ```
 
-### Execute
+### 3. Execute
 
-Abra o arquivo **index.html** no navegador.
+Como o projeto utiliza apenas HTML, CSS e JavaScript puro, basta abrir o arquivo:
 
-Ou utilize o **Live Server** do Visual Studio Code.
+```text
+index.html
+```
 
----
-
-## 🎮 Regras
-
-### Peças comuns
-
-* Movem-se apenas na diagonal.
-* Avançam somente para frente.
-* Capturam pulando sobre a peça adversária.
-
-### Damas
-
-* São promovidas automaticamente ao alcançar a última fileira.
-* Movem-se nas quatro diagonais.
-* Possuem alcance ampliado conforme as regras implementadas.
+Você também pode utilizar uma extensão como **Live Server** no VS Code para uma melhor experiência durante o desenvolvimento.
 
 ---
 
-## 📋 Roadmap
+## 📁 Estrutura do Projeto
 
-* ✅ Tabuleiro
-* ✅ Movimentação
-* ✅ Captura
-* ✅ Promoção para Dama
-* ✅ Controle de turnos
-* ✅ Contador de peças
-
-### Próximas versões
-
-* ⏳ Captura múltipla
-* ⏳ Destacar movimentos possíveis
-* ⏳ IA contra computador
-* ⏳ Multiplayer online
-* ⏳ Sons
-* ⏳ Animações
-* ⏳ Histórico de jogadas
-* ⏳ Sistema de ranking
-* ⏳ Salvar partida
-* ⏳ Temas claro e escuro
+```text
+damas/
+│
+├── index.html      # Página principal
+├── style.css       # Estilos da interface
+├── damas.js        # Lógica completa do jogo
+├── assets/         # Imagens e ícones (opcional)
+└── README.md
+```
 
 ---
 
-## 🤝 Contribuindo
+## 🎮 Regras Implementadas
 
-Contribuições são bem-vindas.
+* As peças movem-se apenas na diagonal.
+* Peças comuns movimentam-se somente para frente.
+* Capturas são realizadas saltando sobre a peça adversária.
+* Ao alcançar a última linha, a peça é promovida para Dama.
+* As Damas podem mover-se em qualquer direção pelas diagonais.
 
-Caso encontre algum problema ou tenha sugestões de melhorias:
+---
 
-1. Faça um Fork do projeto.
-2. Crie uma nova branch.
-3. Faça suas alterações.
-4. Envie um Pull Request.
+## 🛠️ Melhorias Futuras
+
+* IA para jogar contra o computador.
+* Modo multiplayer online.
+* Sistema de ranking.
+* Salvamento automático da partida.
+* Temas claro/escuro.
+* Sons e efeitos visuais.
+* Responsividade para dispositivos móveis.
 
 ---
 
 ## 📄 Licença
 
-Distribuído sob a licença **MIT**.
-
-Consulte o arquivo **LICENSE** para mais detalhes.
+Este projeto está licenciado sob a licença **MIT**. Consulte o arquivo **LICENSE** para mais informações.
 
 ---
 
 ## 👨‍💻 Autor
 
-### gabrdevlab
+Desenvolvido por **gabrdevlab**
 
-GitHub
-
+GitHub:
 https://github.com/gabrdevlab
-
----
-
-⭐ Se este projeto foi útil para você, considere deixar uma estrela no repositório.
