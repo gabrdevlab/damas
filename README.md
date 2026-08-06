@@ -37,8 +37,7 @@ Um jogo de damas clássico desenvolvido para navegadores web utilizando **HTML5*
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/SEU-USUARIO/damas.git
-```
+git clone https://github.com/gabrdevlab/damas.git```
 
 ### 2. Entre na pasta do projeto
 
